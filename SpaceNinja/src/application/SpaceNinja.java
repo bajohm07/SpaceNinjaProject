@@ -25,8 +25,8 @@ public class SpaceNinja extends Application {
 	private static final int WIDTH = 800;
 	private static final int HEIGHT = 600;
 	private static final int PLAYER_SIZE = 80;
-	static final Image PLAYER = new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/spaceNinja4.png"); 
-	static final Image EXPLOSION = new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/explosion.png");
+	static final Image PLAYER = new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/spaceNinja4.png"); 
+	static final Image EXPLOSION = new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/explosion.png");
 	static final int EXPLOSION_W = 128;
 	static final int EXPLOSION_ROWS = 3;
 	static final int EXPLOSION_COL = 3;
@@ -34,16 +34,16 @@ public class SpaceNinja extends Application {
 	static final int EXPLOSION_STEPS = 15;
 		
 		static final Image invadersImg[] = {
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/invader.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/alien1.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/invader3.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/invader2.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/Asteroid3.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/Asteroid1.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/Asteroid2.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/alien2.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/alien3.png"),
-				new Image("file:///Users/holdenbajorek/Desktop/GroupProject/SpaceNinja/SpaceNinja/src/application/images/Asteroid4.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/invader.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/alien1.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/invader2.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/invader3.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/Asteroid1.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/Asteroid2.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/Asteroid3.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/alien2.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/alien3.png"),
+				new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/Asteroid4.png"),
 		};
 		
 		final int maxInvaders = 10,  maxShots = maxInvaders * 2;
