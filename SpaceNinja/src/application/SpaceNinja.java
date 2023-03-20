@@ -1,5 +1,6 @@
 package application;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -33,6 +34,7 @@ public class SpaceNinja extends Application {
 	static final int explosionHeight = 128;
 	static final int explosionSTEPS = 15;
 	
+	
 	//declare variables
 	final int maxInvaders = 10,  maxShots = maxInvaders * 2;
 	boolean gameOver = false;
@@ -42,6 +44,7 @@ public class SpaceNinja extends Application {
 	
 	//load images in invadersImg array for invaders
 	static final Image invadersImg[] = {
+			
 			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/invader.png"),
 			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/alien1.png"),
 			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/invader2.png"),
