@@ -25,8 +25,8 @@ public class SpaceNinja extends Application {
 	private static final int width = 800;
 	private static final int height = 600;
 	private static final int SizePlayer = 80;
-	static final Image playerImg = new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/spaceNinja4.png"); 
-	static final Image explosion = new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/explosion.png");
+	static final Image playerImg = new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/spaceNinja4.png"); 
+	static final Image explosion = new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/explosion.png");
 	static final int explosionWidth = 128;
 	static final int explosionRows = 3;
 	static final int explosionCols = 3;
@@ -42,19 +42,19 @@ public class SpaceNinja extends Application {
 	
 	//load images in invadersImg array for invaders
 	static final Image invadersImg[] = {
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/invader.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/alien1.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/invader2.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/invader3.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/Asteroid1.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/Asteroid2.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/Asteroid3.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/alien2.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/alien3.png"),
-			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/Images/Asteroid4.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/invader.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/alien1.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/invader2.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/invader3.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/Asteroid1.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/Asteroid2.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/Asteroid3.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/alien2.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/alien3.png"),
+			new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/Asteroid4.png"),
 	};
 	
-	//
+	//updating list arrays
 	Ninja player;
 	List<Shot> shots;
 	List<Universe> univ;
@@ -66,9 +66,10 @@ public class SpaceNinja extends Application {
 		Canvas canvas = new Canvas(width, height);	
 		gc = canvas.getGraphicsContext2D();
 		//create timeline to create animation
-		//run for 0.1 seconds animating mouse movements on X axis
+		//run for 0.1 seconds animating explosions, grow/shrink effect
 		Timeline timeline = new Timeline(new KeyFrame(Duration.millis(100), e -> run(gc)));
-		timeline.setCycleCount(Timeline.INDEFINITE);
+		//animation played until stopped (Indefinite)
+		timeline.setCycleCount(Timeline.INDEFINITE); 
 		timeline.play();
 		//set cursor on mouse move
 		canvas.setCursor(Cursor.MOVE);
@@ -183,7 +184,7 @@ public class SpaceNinja extends Application {
 		for (int i = 0; i < univ.size(); i++) {
 			//if universe position on Y axis is greater than height
 			if(univ.get(i).posY > height)
-				//remove universe
+				//remove 
 				univ.remove(i);
 		}
 	}
@@ -295,8 +296,8 @@ public class SpaceNinja extends Application {
 		public void draw() {
 			//laser shot graphics
 			gc.setFill(Color.RED);
-			//if score is between 50 and 70 or if score is greater or = to 120
-			if (score >=50 && score<=70 || score>=120) {
+			//if score is between 50 and 70 or if score is greater or = to 100
+			if (score >=50 && score<=70 || score>=100) {
 				//set laser color different
 				gc.setFill(Color.YELLOWGREEN);
 				//increase speed
