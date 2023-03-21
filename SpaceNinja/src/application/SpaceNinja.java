@@ -1,10 +1,13 @@
 package application;
 
-import java.io.File;
+import java.awt.Toolkit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
+
+import javax.swing.ImageIcon;
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
@@ -26,6 +29,7 @@ public class SpaceNinja extends Application {
 	private static final int width = 800;
 	private static final int height = 600;
 	private static final int SizePlayer = 80;
+	
 	static final Image playerImg = new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/spaceNinja4.png"); 
 	static final Image explosion = new Image("file:/Users/holdenbajorek/git/SpaceNinja/SpaceNinjaProject/SpaceNinja/src/images/explosion.png");
 	static final int explosionWidth = 128;
@@ -33,6 +37,7 @@ public class SpaceNinja extends Application {
 	static final int explosionCols = 3;
 	static final int explosionHeight = 128;
 	static final int explosionSTEPS = 15;
+	
 	
 	
 	//declare variables
